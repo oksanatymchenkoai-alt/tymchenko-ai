@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Практичні AI-інструкції, промпти та автоматизації Оксани Тимченко. Перевірено на реальних задачах.">
+  <meta name="color-scheme" content="light">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data: https:; style-src 'self'; script-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self' mailto:">
+  <title>Інструкції — Tymchenko.AI</title>
+  <link rel="stylesheet" href="assets.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="Tymchenko.AI — інструкції"><span class="brand-mark">T</span><span>TYMCHENKO.AI</span></a>
+    <button class="menu-button" type="button" aria-expanded="false" aria-controls="main-nav">Меню</button>
+    <nav id="main-nav" class="nav" aria-label="Головна навігація">
+      <a class="active" href="index.html">Інструкції</a>
+      <a href="practice.html">Практика</a>
+      <a href="about.html">Про мене</a>
+      <a href="partnerships.html">Співпраця</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="catalog-head">
+      <p class="eyebrow">AI порадив — я розібрала</p>
+      <h1>Практичні AI-інструкції</h1>
+      <p class="lead">Реальні задачі, готові промпти й чесні обмеження. Усе безкоштовно — без реєстрації та підписки.</p>
+    </section>
+
+    <section class="catalog" aria-labelledby="catalog-title">
+      <h2 id="catalog-title" class="visually-hidden">Каталог матеріалів</h2>
+      <div class="search-wrap">
+        <label for="search">Що ви хочете зробити?</label>
+        <div class="search-box"><span aria-hidden="true">⌕</span><input id="search" type="search" autocomplete="off" placeholder="Наприклад: перевірити резюме"></div>
+      </div>
+      <div class="filter-group" aria-labelledby="tool-label">
+        <span id="tool-label" class="filter-label">Інструмент</span>
+        <div class="filter-row" data-filter="tool">
+          <button class="chip active" data-value="all" type="button">Усі</button>
+          <button class="chip" data-value="ChatGPT" type="button">ChatGPT</button>
+          <button class="chip" data-value="Gemini" type="button">Gemini</button>
+          <button class="chip" data-value="Claude" type="button">Claude</button>
+          <button class="chip" data-value="Multi-tool" type="button">Кілька AI</button>
+        </div>
+      </div>
+      <div class="filter-group" aria-labelledby="type-label">
+        <span id="type-label" class="filter-label">Тип</span>
+        <div class="filter-row" data-filter="type">
+          <button class="chip active" data-value="all" type="button">Усі</button>
+          <button class="chip" data-value="guide" type="button">Інструкції</button>
+          <button class="chip" data-value="prompt" type="button">Промпти</button>
+          <button class="chip" data-value="automation" type="button">Автоматизації</button>
+          <button class="chip" data-value="review" type="button">Перевірки</button>
+        </div>
+      </div>
+      <div class="results-bar"><p id="result-count" aria-live="polite">Завантаження матеріалів…</p><button id="reset" class="text-button" type="button" hidden>Скинути фільтри</button></div>
+      <div id="resource-grid" class="resource-grid" aria-live="polite"></div>
+      <div id="empty-state" class="empty" hidden><h3>Нічого не знайдено</h3><p>Спробуйте коротший запит або скиньте фільтри.</p></div>
+    </section>
+  </main>
+
+  <footer><p>© 2026 Оксана Тимченко</p><p>AI може помилятися. Важливе завжди перевіряйте.</p></footer>
+  <script src="app.js" defer></script>
+</body>
+</html>
